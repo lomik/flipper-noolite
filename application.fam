@@ -1,0 +1,20 @@
+App(
+    appid="noolite",
+    name="NooLite",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="noolite_app",
+    requires=["gui", "storage", "notification"],
+    stack_size=4 * 1024,
+    sources=[
+        "noolite_app.c",
+        "noolite_scenes.c",
+        "noolite_protocol.c",
+        "noolite_radio.c",
+        "noolite_view_receive.c",
+        "noolite_view_remote.c",
+    ],
+    fap_icon="noolite_10px.png",
+    fap_category="Sub-GHz",
+    fap_version="0.1",
+    fap_description="nooLite 433.92 MHz remote, receiver and PT111/PT112 sensor reader",
+)

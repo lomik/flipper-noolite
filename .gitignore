@@ -1,0 +1,9 @@
+.venv/
+dist/
+build/
+.vscode/
+.clang-format
+.editorconfig
+.gitignore.ufbt
+tests/test_protocol
+tests/*.dSYM/
